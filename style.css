@@ -1,0 +1,283 @@
+header{
+    width:100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+}
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    background-color:lightgrey;
+}
+nav{
+    
+    position: relative;
+    top:10px;
+    left:5px;
+    bottom:10px;
+    background-color:black;
+    height: 30px;
+    width:98%;
+position:fixed;
+
+
+}
+li{
+    list-style-type: none;
+    
+
+}
+li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    color:white;
+    width:25%;
+    line-height: 30px;
+    float: left;
+    
+    
+
+   
+}
+li a:hover{
+    background-color: lightgrey;
+    color:black;
+
+    
+
+    
+    
+    
+}
+    
+
+
+#heading{
+    clear:both;
+    height:70vh;
+    background-image: url("fae2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+div #center{
+    color:white;
+    font-size: 5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    
+    
+
+}
+#bottom{
+    text-align: bottom;
+    background-color: black;
+    color:white ;
+    width: max-content;
+}
+
+#about{
+    margin-top: 10vh;
+
+}
+h2{
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 2%;
+
+}
+#content{
+    box-sizing: border-box;
+    box-shadow: lightslategray;
+    margin: 0 auto;
+    width:50vw;
+    padding:2%;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+#extra{
+    margin: 0 auto;
+    width:46vw;
+    font-family: monospace;
+    padding: 2%;
+    box-sizing: border-box;
+    border-left: 3px solid gray;
+    font-size: 1.5em;
+    background-color: rgb(207, 203, 203);
+}
+#img
+{    margin:0 auto;
+    margin-top: 3%;
+    width:46vw;
+    height:50vh;
+   
+    background-image: url("coffeeshop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+#timing{
+    width:46vw;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 1.2em;
+}
+#text{
+    width:46vw;
+    height:70vh;
+    margin: 0 auto;
+    margin-top:5%;
+    
+    box-sizing: border-box;
+    box-shadow:1px 1px 5px 2px darkgrey;
+}
+#text a{
+    box-shadow:0px 0px 3px 2px darkgrey;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+
+}
+#text a:first-child{
+    background-color:black;
+    color:white;
+    
+}
+#text a:hover{
+    background-color: black;
+    color: white;
+    
+}
+h5,#Eat p{
+    font-size: 1.2em;
+    justify-content: center;
+    padding: 1%;
+}
+h5,#Drinks p{
+    font-size: 1.2em;
+}
+#Drinks{
+    display: none;
+    
+    padding: 1%;
+}
+.img2{
+    background-image: url("coffe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:46vw;
+    height:50vh;
+    margin:0 auto;
+    margin-top:5%;
+}
+.content{
+    margin:0 auto;
+    width:46vw;
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+.img3{
+    background-image: url("street.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:46vw;
+    height: 55vh;
+    margin:0 auto;
+    margin-top: 1%;
+}
+input{
+    display: block;
+    width:46vw;
+    border:1px solid grey;
+    height:5vh;
+    margin:0 auto;
+    margin-bottom: 1%;
+    font-size: 1em;
+    background-color:rgb(226, 223, 223);
+    padding: 0.5%;
+}
+input:first-child{
+    margin-top: 2%;
+}
+input:hover{
+    background-color: ivory;
+    border: none;
+}
+input:last-child{
+    background-color: black;
+    color:white;
+}
+input:last-child:hover{
+    background-color: grey;
+    color:black;
+}
+footer{
+    width:46vw;
+    text-align: center;
+    color:white;
+    background-color: linear-gradient(skyblue,grey);
+    height:10vh;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:760px){
+    #content{
+        width:80vw;
+    }
+    #extra{
+        width:76vw;
+    }
+    #img{
+        width:76vw;
+    }
+    #timing{
+        width:76vw;
+    }
+    
+    #text{
+        width:76vw;
+        height:auto;
+    }
+    #text a{
+        width:50%;
+    }
+    .img3{
+        width:76vw;
+    }
+    .img2{
+        width: 76vw;
+    }
+    .content{
+        width:76vw;
+    }
+    input{
+        width:76vw;
+    }
+    footer{
+        width:76vw;
+    }
+}

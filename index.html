@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#where">WHERE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="heading">
+        <p id="center">the<br />
+            Cafe</p>
+        <p id="bottom">
+            Open from : 10am to 7pm</p>
+        
+    </div>
+    <div id="about">
+        <h2>ABOUT THE CAFE</h2>
+        <div id="content">
+            <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br>
+                <br>
+                In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+                sandwiches, as well as a selection of sides and salads and other good stuff.
+            </p>
+        </div>
+        <div id="extra">
+            <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+        <div id="img"></div>
+        <div id="timing">
+        <p><b>Opening Hours:</b><span>10am to 7pm</span></p>
+        <p><b>Address:</b><span> 15 Adr street, 5015, NY</span></p>
+        </div>
+    </div>
+    <div id="menu">
+        <h2>THE MENU</h2>
+        <div id="text">
+            <a id="1" href="#Eat" onclick="display2()">EAT</a>
+            <a id="2" href="#Drinks" onclick="display()">DRINK</a>
+            <div id="Eat">
+                <h5>Bread Basket</h5>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+              
+                <h5>Honey Almond Granola with Fruits</h5>
+                <p >Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+              
+                <h5>Belgian Waffle</h5>
+                <p >Vanilla flavored batter with malted flour 7.50</p><br>
+              
+                <h5>Scrambled eggs</h5>
+                <p >Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+              
+                <h5>Blueberry Pancakes</h5>
+                <p>With syrup, butter and lots of berries 8.50</p>
+              </div>
+              <div id="Drinks">
+                <h5 >Coffee</h5>
+                <p >Regular coffee 2.50</p><br>
+              
+                <h5 >Chocolato</h5>
+                <p >Chocolate espresso with milk 4.50</p><br>
+              
+                <h5>Corretto</h5>
+                <p >Whiskey and coffee 5.00</p><br>
+              
+                <h5 >Iced tea</h5>
+                <p>Hot tea, except not hot 3.00</p><br>
+              
+                <h5>Soda</h5>
+                <p>Coke, Sprite, Fanta, etc. 2.50</p>
+        </div>
+        
+        
+    </div>
+    <div class="img2"></div>
+    <div id="where">
+        <h2>Where to find Us</h2>
+        <p class="content">Find us at some place.</div>
+    <div class="img3"></div>
+    <p class="content"><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+    <form >
+        <input class="t" type="text" placeholder="Name"id="tex" onclick="myfunction()" required>
+        <input class="t" type="number" placeholder="How Many people" id="num" required>
+        <input class="t" type="datetime-local" id="time"  required>
+        <input class="t" type="submit" onclick="return myfunc()">
+
+    </form>
+    
+    </div>
+    <footer>
+        <p>Visit Us!</p>
+    </footer>
+    <script>
+        function display(){
+            document.getElementById("1").style.backgroundColor="lightgrey";
+            document.getElementById("2").style.backgroundColor="black";
+            document.getElementById("1").style.color="black"
+            document.getElementById("2").style.color="white"
+            document.getElementById("Eat").style.display="none";
+            document.getElementById("Drinks").style.display="block";
+        }
+        function display2(){
+
+            document.getElementById("2").style.backgroundColor="lightgrey";
+            document.getElementById("1").style.backgroundColor="black";
+            document.getElementById("2").style.color="black";
+            document.getElementById("1").style.color="white"
+
+            document.getElementById("Drinks").style.display="none";
+            document.getElementById("Eat").style.display="block";
+        }
+        function myfunction(){
+            document.getElementsByClassName("t").style.border='none';
+
+        }
+        function myfunc(){
+        var x=document.getElementById("time").value;
+        var y=document.getElementById("tex").value;
+        var z=getElementById("num").value;
+        if(x!=""&&y!=""&z!=""){
+            alert("Your table has been Booked.Thank You!!!");
+        }
+        else{
+            alert("Please fill all the details");
+        }
+        }
+        
+    </script>
+</body>
+
+</html>
