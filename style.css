@@ -292,41 +292,44 @@ footer{
     }
     nav{
         width:80vw;
+        
     }
 
     #content{
-        width:80%;
+        width: 100%;
+        height:auto;
     }
     #extra{
-        width:76vw;
+        width:100vw;
     }
     #img{
-        width:76vw;
+        width:100vw;
     }
     #timing{
-        width:76vw;
+        width:100vw;
     }
     
     #text{
-        width:76vw;
+        width:100vw;
         height:auto;
     }
     #text a{
         width:50%;
+        
     }
     .img3{
-        width:76vw;
+        width:100vw;
     }
     .img2{
-        width: 76vw;
+        width: 100vw;
     }
     .content{
-        width:76vw;
+        width:100vw;
     }
     input{
-        width:76vw;
+        width:100vw;
     }
     footer{
-        width:76vw;
+        width:100vw;
     }
 }
