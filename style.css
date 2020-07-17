@@ -281,10 +281,10 @@ footer{
         width:76vw;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     header{
         width:100vw;
-        background-color: blue;
+        
         height: 50px;
     }
     #heading{
